@@ -1,0 +1,19 @@
+{
+  "name": "sample-nodejs",
+  "version": "1.0.0",
+  "description": "a sample RESTful API with Node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gkama/sample-nodejs.git"
+  },
+  "author": "Georgi Kamacharov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gkama/sample-nodejs/issues"
+  },
+  "homepage": "https://github.com/gkama/sample-nodejs#readme"
+}
