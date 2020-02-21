@@ -12,6 +12,9 @@
   },
   "author": "Georgi Kamacharov",
   "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
   "bugs": {
     "url": "https://github.com/gkama/sample-nodejs/issues"
   },
