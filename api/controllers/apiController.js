@@ -1,7 +1,7 @@
 "use strict";
 
-const models = require("../models/testModel")
+const testModel = require("../models/testModel")
 
 exports.getModels = function(req, res) {
-    res.json({ test: "yes" })
+    res.json(testModel.Models)
 }
