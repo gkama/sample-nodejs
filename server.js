@@ -1,9 +1,16 @@
 const express = require("express");
+const bodyParser = require("body-parser");
+var routes = require("./api/routes/apiRoutes"); //importing route
 
 const PORT = 8080;
-const HOST = '0.0.0.0';
+const HOST = "localhost";
 
 const app = express();
+
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
+
+routes(app); //register the route
 
 app.get("/", (req, res) => {
   res.send("Hello from Node.js app \n");
