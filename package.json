@@ -2,7 +2,7 @@
   "name": "sample-nodejs",
   "version": "1.0.0",
   "description": "a sample RESTful API with Node.js",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "test"
   },
