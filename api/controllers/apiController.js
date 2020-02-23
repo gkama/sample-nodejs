@@ -6,7 +6,15 @@ exports.getModels = function(req, res) {
     res.json(testModel.Models);
 }
 
-exports.getCombinations = function(str) {
+exports.getModel = function(req, res) {
+    for(const model of testModel.Models) {
+        if (model.id == req.params.id) {
+            res.json(model);
+        }
+    }
+}
+
+exports.getCombinations = function(str, res) {
     var fn = function(active, rest, a) {
         if (!active && !rest) {
             return;

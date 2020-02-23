@@ -3,6 +3,9 @@
 module.exports = function(app) {
   var api = require("../controllers/apiController");
 
-  app.route('/models')
-    .get(api.getModels)
+  app.route("/models")
+    .get(api.getModels);
+
+  app.route("/model/:id")  
+    .get(api.getModel);
 };
