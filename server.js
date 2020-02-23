@@ -1,6 +1,6 @@
 const express = require("express");
 const bodyParser = require("body-parser");
-var routes = require("./api/routes/apiRoutes"); //importing route
+const routes = require("./api/routes/apiRoutes"); //importing route
 
 const PORT = 8080;
 const HOST = "localhost";
