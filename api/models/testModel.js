@@ -1,3 +1,5 @@
+const uuid = require("uuid");
+
 class Model {
     constructor(id, name, details, publicKey) {
         this.id = id
@@ -6,6 +8,8 @@ class Model {
         this.publicKey = publicKey
     }
 }
+
+exports.TestModel = new Model(9009, "Finance", "finance|financial", uuid.v4())
 
 exports.Models = [
     new Model(1, "test 1", "testing model 1", "67788325-1671-40a0-b0dc-304ce207b81f"),

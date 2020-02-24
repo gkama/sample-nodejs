@@ -2,6 +2,10 @@
 
 const testModel = require("../models/testModel");
 
+exports.getTestModel = function(req, res) {
+    res.json(testModel.TestModel)
+}
+
 exports.getModels = function(req, res) {
     res.json(testModel.Models);
 }
