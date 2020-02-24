@@ -11,4 +11,8 @@ module.exports = function(app) {
 
   app.route("/model/:id")  
     .get(api.getModel);
+
+  
+  app.route("/combinations/test")
+    .get(api.getTestCombinations);
 };

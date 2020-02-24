@@ -18,7 +18,11 @@ exports.getModel = function(req, res) {
     }
 }
 
-exports.getCombinations = function(str, res) {
+exports.getTestCombinations = function(req, res) {
+    res.json(getCombinations("abcd"))
+}
+
+function getCombinations(str) {
     var fn = function(active, rest, a) {
         if (!active && !rest) {
             return;
