@@ -13,7 +13,7 @@
   "author": "Georgi Kamacharov",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "uuid": "^7.0.0"
   },
   "bugs": {
